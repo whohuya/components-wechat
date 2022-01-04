@@ -1,0 +1,5 @@
+<!--pages/eat/eat.wxml-->
+<view class='centerFood'>
+  <text style="color:{{color}}">{{food}}</text>
+</view>
+<button bindtap="handleChangefood">看下今天吃啥</button>
