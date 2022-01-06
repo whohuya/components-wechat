@@ -1,0 +1,14 @@
+<!--pages/home/home.wxml-->
+<view class='content'>
+<text class='sub-title'>今日备忘录</text>
+<textarea confirm-type='done'	 class='textarea' bindblur="bindTextAreaBlur"  placeholder="今日备忘录" 
+value='{{remark}}'/>
+
+<text class='sub-title-secentd'>小工具</text>
+<view class='line'></view>
+<view class='btn' bindtap="handleClick" data-id="1">
+<image class='eat' src='../../img/eat.png'></image>
+吃饭吧
+<image src="../../img/right.png" class="right"></image>
+</view>
+</view>  

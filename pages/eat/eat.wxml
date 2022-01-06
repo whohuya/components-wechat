@@ -1,5 +1,16 @@
 <!--pages/eat/eat.wxml-->
 <view class='centerFood'>
-  <text style="color:{{color}}">{{food}}</text>
+  <text wx:if='{{dontChange}}'>今天吃：</text><text style="color:{{color}}">{{food}}</text>
 </view>
-<button bindtap="handleChangefood">看下今天吃啥</button>
+<view class="btn-list" wx:if='{{!dontChange}}'>
+  <view class='start' bindtap="handleChangefood">今天吃啥</view>
+  <view wx:if='{{food}}' class='eat' bindtap="handleChoseFood">就吃它了</view>
+</view>
+
+<view class='line'></view>
+<view class="sub-title">已经吃过啥:</view>
+<view wx:for="{{choseFood}}" wx:key="index" class="line-chose">
+  {{item.label}}
+  <image src="../../img/close.png" class="close" bindtap="handleClose" data-item="{{item}}" data-index="{{index}}">
+  </image>
+</view>

@@ -1,0 +1,67 @@
+/* pages/home/home.wxss */
+.content {
+  padding: 12rpx 24rpx;
+}
+
+.textarea {
+  background: #ffffff;
+  padding: 12rpx;
+  width: 95%;
+  margin: 12px auto;
+  height: 200px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.10);
+  margin-bottom: 24px;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-family: PingFang, PingFang-SC;
+  font-weight: SC;
+  text-align: left;
+  color: #6d7278;
+  line-height: 12px;
+}
+
+.btn {
+  width: 95%;
+  font-size: 16px;
+  font-family: PingFang, PingFang-SC;
+  font-weight: SC;
+  text-align: left;
+  color: #6d7278;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12rpx 24rpx;
+  border-radius: 6px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.10);
+  position: relative;
+  height: 50px;
+}
+.right{
+  width:32rpx;
+  height: 32rpx;
+  margin-right: 24rpx;
+  position: absolute;
+  right: 12rpx;
+}
+.sub-title-secentd {
+  font-size: 16px;
+  font-family: PingFang, PingFang-SC;
+  font-weight: SC;
+  text-align: left;
+  color: #6d7278;
+  line-height: 12px;
+}
+.eat{
+  width:58rpx;
+  height: 58rpx;
+  margin-right: 24rpx;
+}
+.line {
+  width: 98%;
+  margin: 12px auto;
+  height: 1px;
+  background: #e5e5e5;
+}

@@ -1,8 +1,9 @@
 {
   "pages": [
     
-    "pages/eat/eat",
+    "pages/home/home",
     "pages/index/index",
+    "pages/eat/eat",
     "pages/logs/logs"
   ],
   "window": {
