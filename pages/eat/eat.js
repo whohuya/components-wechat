@@ -13,6 +13,26 @@ Page({
     color:'#000',
     choseFood:[],
     dontChange:false,
+    emoj:false,
+  },
+  handleShowDia(event){
+    let index=event.currentTarget.dataset.index
+    let arr=this.data.choseFood
+    arr[index].emoj=!arr[index].emoj
+    this.setData({
+        choseFood:arr
+    })
+  },
+  choseImage(event){
+    let index=event.currentTarget.dataset.index
+    let num=event.currentTarget.dataset.id
+    let arr=this.data.choseFood
+    arr[index].showEmoj='emo'+num
+    arr[index].emoj=!arr[index].emoj
+    this.setData({
+      choseFood:arr
+  })
+  wx.setStorageSync('choseFood', this.data.choseFood)
   },
   handleChangefood() {
     
@@ -44,7 +64,9 @@ Page({
         if (res.confirm) {
           let obj={
             value:that.data.id,
-            label:that.data.food
+            label:that.data.food,
+            emoj:false,
+            showEmoj:'normal'
         }
           let list=that.data.choseFood
           list.push(obj)

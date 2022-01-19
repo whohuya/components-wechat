@@ -63,15 +63,63 @@ line-height: 72rpx;
   margin-right: 24rpx;
   position: absolute;
   right: 12rpx;
+  top:26rpx;
 }
 .line-chose{
-  font-size: 12px;
+  position: relative;
+  font-size: 16px;
 font-family: PingFangSC, PingFangSC-Medium;
 font-weight: 500;
 text-align: left;
 color: #1c2434;
-line-height: 20px;
+line-height: 30px;
 margin: 12rpx auto;
 padding: 12rpx;
 box-shadow: 2px 4px 10px 0px rgba(3,19,91,0.10); 
+}
+.normal{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sub-name{
+  font-size: 12px;
+  color: gray;
+}
+.emoj-img{
+  width: 20px;
+  height: 20px;
+  margin-left: 12rpx;
+}
+.emoj-line-show{
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20rpx;
+  box-shadow: 2px 4px 10px 0px rgba(3,19,91,0.10); 
+  transition: height 1s;
+}
+.emoj-line{
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: height 1s;
+  margin: 0;
+  box-shadow: 2px 4px 10px 0px rgba(3,19,91,0.10); 
+}
+.emoj-line-show image{
+  width: 24px;
+  height: 24px;
+  margin: 12rpx;
+  transition: height 1s;
+}
+.emoj-line image{
+  width: 0px;
+  height: 0px;
+  margin: 12rpx;
+  transition: height 1s;
 }

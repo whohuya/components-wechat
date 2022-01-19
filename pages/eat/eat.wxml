@@ -10,7 +10,22 @@
 <view class='line'></view>
 <view class="sub-title">已经吃过啥:</view>
 <view wx:for="{{choseFood}}" wx:key="index" class="line-chose">
+<view class="normal">
   {{item.label}}
+  <image src="../../img/{{item.showEmoj}}.png" class="emoj-img" bindtap="handleShowDia" data-index="{{index}}"></image>
+</view>
+ 
+  <view class="{{item.emoj?'emoj-line-show':'emoj-line'}}" >
+    <image src="../../img/emo1.png" bindtap="choseImage" data-index="{{index}}" data-id="1"></image>
+    <image src="../../img/emo2.png" bindtap="choseImage" data-index="{{index}}" data-id="2"></image>
+    <image src="../../img/emo3.png" bindtap="choseImage" data-index="{{index}}" data-id="3"></image>
+    <image src="../../img/emo4.png" bindtap="choseImage" data-index="{{index}}" data-id="4"></image>
+    <image src="../../img/emo5.png" bindtap="choseImage" data-index="{{index}}" data-id="5"></image>
+    <image src="../../img/emo6.png" bindtap="choseImage" data-index="{{index}}" data-id="6"></image>
+    <image src="../../img/emo7.png" bindtap="choseImage" data-index="{{index}}" data-id="7"></image>
+    <image src="../../img/emo8.png" bindtap="choseImage" data-index="{{index}}" data-id="8"></image>
+    <image src="../../img/emo9.png" bindtap="choseImage" data-index="{{index}}" data-id="9"></image>
+  </view>
   <image src="../../img/close.png" class="close" bindtap="handleClose" data-item="{{item}}" data-index="{{index}}">
   </image>
 </view>
